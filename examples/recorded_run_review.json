@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "report_kind": "historical_development_run",
+  "record_date": "2026-10-17",
+  "prompt_version": "support-v4-model-scope-measurement",
+  "configured_model": "deepseek-v4-flash",
+  "returned_models": [
+    "deepseek-flash"
+  ],
+  "task_scope": "历史范围与测量类型任务，非当前疾病与正常对照任务",
+  "current_baseline_accuracy": null,
+  "medical_accuracy": null,
+  "independent_test": false,
+  "requests": 3,
+  "failed_requests": 0,
+  "emitted_relations": 2,
+  "usage": {
+    "prompt_tokens": 5942,
+    "completion_tokens": 1096,
+    "total_tokens": 7038
+  },
+  "elapsed_seconds": 6.546,
+  "unsupported_scope_passages": 2,
+  "quote_existence_only": true,
+  "cases": [
+    {
+      "case_id": "IL6-PMID42041559",
+      "gene": "IL6",
+      "pmid": "42041559",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42041559/",
+      "previous_relation_count": 0,
+      "new_relation_count": 1,
+      "finding": "历史提示返回了细胞模型中的表达候选。",
+      "limitation": "关系支持段落仍不完整；细胞干预结果不能直接作为疾病与正常对照的表达结论。"
+    },
+    {
+      "case_id": "ABCC8-PMID33338546",
+      "gene": "ABCC8",
+      "pmid": "33338546",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/33338546/",
+      "previous_relation_count": 1,
+      "new_relation_count": 1,
+      "finding": "历史提示保留了治疗相关的表达升高，并将测量类型保留为不明确。",
+      "limitation": "目标疾病映射与关系支持仍需核对；治疗比较不代替疾病与正常对照比较。"
+    },
+    {
+      "case_id": "CD36-PMID20966915",
+      "gene": "CD36",
+      "pmid": "20966915",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/20966915/",
+      "previous_relation_count": 0,
+      "new_relation_count": 0,
+      "finding": "历史提示未把遗传变异研究转换成表达量证据。",
+      "limitation": "空输出只描述本次抽取范围，不能据此判断CD36与疾病无关。"
+    }
+  ],
+  "source_sha256": {
+    "run_report": "eac76240e5844ae8a0642791e772f65ee8fb83ef50971ee57fdee1bec0167e6e",
+    "assessment": "d1a0202aef2e3049f1d9604ca1bea9c0d4b655d913a5cda585ec7fb27dda5dfc",
+    "comparisons": "a1d8ea180dfd002755b90e1af31009a1beab7b81fcdd477a25eeb1eb99c33f19"
+  }
+}

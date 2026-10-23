@@ -1,0 +1,267 @@
+{
+  "application_version": "0.5.1",
+  "synthetic": true,
+  "notice_zh": "人工编写的教学场景；没有真实论文来源，不是模型准确率或医学结论。",
+  "external_requests": 0,
+  "model_requests": 0,
+  "cases": [
+    {
+      "query": {
+        "gene": "IL6",
+        "disease": "rheumatoid arthritis"
+      },
+      "state": "completed",
+      "evidence_count": 3,
+      "evidence": [
+        {
+          "paper_id": "DEMO-002",
+          "gene_or_target": "IL6",
+          "disease": "rheumatoid arthritis",
+          "species": "mouse",
+          "expression_direction": "decreased",
+          "disease_effect": "progression_decrease",
+          "relation_type": "causal",
+          "evidence_type": "animal_model",
+          "evidence_sentence": "In this fictional mouse experiment, IL6 knockdown reduced rheumatoid arthritis model severity.",
+          "source_type": "synthetic_demo",
+          "source_location": "人工编写案例，无真实论文",
+          "quote_verified": true,
+          "synthetic": true,
+          "needs_review": true,
+          "relation_scope": "unclear",
+          "population_context": "unclear",
+          "measurement_type": "unclear",
+          "support_flags": [
+            "scope_unclear",
+            "support_quote_missing",
+            "population_unclear",
+            "measurement_unclear"
+          ],
+          "support_messages": [
+            "关系范围未明确，不能只凭共现视为直接关系",
+            "尚无可核对的关系支持原句",
+            "研究人群或模型未明确",
+            "测量对象未明确，需区分表达、丰度、定位和活性"
+          ],
+          "review_status": "unreviewed"
+        },
+        {
+          "paper_id": "DEMO-001",
+          "gene_or_target": "IL6",
+          "disease": "rheumatoid arthritis",
+          "species": "human",
+          "expression_direction": "increased",
+          "disease_effect": "biomarker_only",
+          "relation_type": "associated",
+          "evidence_type": "human_cohort",
+          "evidence_sentence": "In this fictional teaching example, IL6 expression was elevated in rheumatoid arthritis samples compared with controls.",
+          "source_type": "synthetic_demo",
+          "source_location": "人工编写案例，无真实论文",
+          "quote_verified": true,
+          "synthetic": true,
+          "needs_review": true,
+          "relation_scope": "unclear",
+          "population_context": "unclear",
+          "measurement_type": "unclear",
+          "support_flags": [
+            "scope_unclear",
+            "support_quote_missing",
+            "population_unclear",
+            "measurement_unclear"
+          ],
+          "support_messages": [
+            "关系范围未明确，不能只凭共现视为直接关系",
+            "尚无可核对的关系支持原句",
+            "研究人群或模型未明确",
+            "测量对象未明确，需区分表达、丰度、定位和活性"
+          ],
+          "review_status": "unreviewed"
+        },
+        {
+          "paper_id": "DEMO-003",
+          "gene_or_target": "IL6",
+          "disease": "rheumatoid arthritis",
+          "species": "human",
+          "expression_direction": "increased",
+          "disease_effect": "biomarker_only",
+          "relation_type": "associated",
+          "evidence_type": "human_cohort",
+          "evidence_sentence": "In this fictional cohort, IL6 expression was elevated in rheumatoid arthritis but did not predict survival.",
+          "source_type": "synthetic_demo",
+          "source_location": "人工编写案例，无真实论文",
+          "quote_verified": true,
+          "synthetic": true,
+          "needs_review": true,
+          "relation_scope": "unclear",
+          "population_context": "unclear",
+          "measurement_type": "unclear",
+          "support_flags": [
+            "scope_unclear",
+            "support_quote_missing",
+            "population_unclear",
+            "measurement_unclear"
+          ],
+          "support_messages": [
+            "关系范围未明确，不能只凭共现视为直接关系",
+            "尚无可核对的关系支持原句",
+            "研究人群或模型未明确",
+            "测量对象未明确，需区分表达、丰度、定位和活性"
+          ],
+          "review_status": "unreviewed"
+        }
+      ]
+    },
+    {
+      "query": {
+        "gene": "ABCC8",
+        "disease": "type 2 diabetes"
+      },
+      "state": "completed",
+      "evidence_count": 2,
+      "evidence": [
+        {
+          "paper_id": "DEMO-005",
+          "gene_or_target": "ABCC8",
+          "disease": "type 2 diabetes",
+          "species": "human",
+          "expression_direction": "unclear",
+          "disease_effect": "no_relation",
+          "relation_type": "associated",
+          "evidence_type": "human_cohort",
+          "evidence_sentence": "In this fictional cohort, ABCC8 expression was not associated with type 2 diabetes risk.",
+          "source_type": "synthetic_demo",
+          "source_location": "人工编写案例，无真实论文",
+          "quote_verified": true,
+          "synthetic": true,
+          "needs_review": true,
+          "relation_scope": "unclear",
+          "population_context": "unclear",
+          "measurement_type": "unclear",
+          "support_flags": [
+            "scope_unclear",
+            "support_quote_missing",
+            "population_unclear",
+            "measurement_unclear",
+            "negative_endpoint_needs_review"
+          ],
+          "support_messages": [
+            "关系范围未明确，不能只凭共现视为直接关系",
+            "尚无可核对的关系支持原句",
+            "研究人群或模型未明确",
+            "测量对象未明确，需区分表达、丰度、定位和活性",
+            "否定结论需核对具体基因、疾病和终点；信息不足不等于无关联"
+          ],
+          "review_status": "unreviewed"
+        },
+        {
+          "paper_id": "DEMO-004",
+          "gene_or_target": "ABCC8",
+          "disease": "type 2 diabetes",
+          "species": "human",
+          "expression_direction": "decreased",
+          "disease_effect": "biomarker_only",
+          "relation_type": "associated",
+          "evidence_type": "human_cohort",
+          "evidence_sentence": "In this fictional teaching example, ABCC8 expression was decreased in pancreatic samples from participants with type 2 diabetes.",
+          "source_type": "synthetic_demo",
+          "source_location": "人工编写案例，无真实论文",
+          "quote_verified": true,
+          "synthetic": true,
+          "needs_review": true,
+          "relation_scope": "unclear",
+          "population_context": "unclear",
+          "measurement_type": "unclear",
+          "support_flags": [
+            "scope_unclear",
+            "support_quote_missing",
+            "population_unclear",
+            "measurement_unclear"
+          ],
+          "support_messages": [
+            "关系范围未明确，不能只凭共现视为直接关系",
+            "尚无可核对的关系支持原句",
+            "研究人群或模型未明确",
+            "测量对象未明确，需区分表达、丰度、定位和活性"
+          ],
+          "review_status": "unreviewed"
+        }
+      ]
+    },
+    {
+      "query": {
+        "gene": "TP53",
+        "disease": "breast cancer"
+      },
+      "state": "completed",
+      "evidence_count": 2,
+      "evidence": [
+        {
+          "paper_id": "DEMO-007",
+          "gene_or_target": "TP53",
+          "disease": "breast cancer",
+          "species": "human",
+          "expression_direction": "unclear",
+          "disease_effect": "no_relation",
+          "relation_type": "associated",
+          "evidence_type": "human_cohort",
+          "evidence_sentence": "In this fictional teaching example, TP53 expression was not associated with breast cancer survival.",
+          "source_type": "synthetic_demo",
+          "source_location": "人工编写案例，无真实论文",
+          "quote_verified": true,
+          "synthetic": true,
+          "needs_review": true,
+          "relation_scope": "unclear",
+          "population_context": "unclear",
+          "measurement_type": "unclear",
+          "support_flags": [
+            "scope_unclear",
+            "support_quote_missing",
+            "population_unclear",
+            "measurement_unclear",
+            "negative_endpoint_needs_review"
+          ],
+          "support_messages": [
+            "关系范围未明确，不能只凭共现视为直接关系",
+            "尚无可核对的关系支持原句",
+            "研究人群或模型未明确",
+            "测量对象未明确，需区分表达、丰度、定位和活性",
+            "否定结论需核对具体基因、疾病和终点；信息不足不等于无关联"
+          ],
+          "review_status": "unreviewed"
+        },
+        {
+          "paper_id": "DEMO-006",
+          "gene_or_target": "TP53",
+          "disease": "breast cancer",
+          "species": "human",
+          "expression_direction": "increased",
+          "disease_effect": "poor_prognosis",
+          "relation_type": "associated",
+          "evidence_type": "human_cohort",
+          "evidence_sentence": "In this fictional teaching example, elevated TP53 expression was associated with poor prognosis in breast cancer patients.",
+          "source_type": "synthetic_demo",
+          "source_location": "人工编写案例，无真实论文",
+          "quote_verified": true,
+          "synthetic": true,
+          "needs_review": true,
+          "relation_scope": "unclear",
+          "population_context": "unclear",
+          "measurement_type": "unclear",
+          "support_flags": [
+            "scope_unclear",
+            "support_quote_missing",
+            "population_unclear",
+            "measurement_unclear"
+          ],
+          "support_messages": [
+            "关系范围未明确，不能只凭共现视为直接关系",
+            "尚无可核对的关系支持原句",
+            "研究人群或模型未明确",
+            "测量对象未明确，需区分表达、丰度、定位和活性"
+          ],
+          "review_status": "unreviewed"
+        }
+      ]
+    }
+  ]
+}

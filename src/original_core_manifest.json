@@ -1,0 +1,20 @@
+{
+  "canonical_project": "rag_gene_disease_extractor/src",
+  "engine": "original-candidate-pipeline-v2",
+  "files": {
+    "retrieval.py": "cf10b5ab313d2c206b5578a9de3475986aab43e6d7a1a623a4b3fa0a7688fcb5",
+    "text_utils.py": "cd24fc180bb225966161d3f962d80833090dbc75ca5105f2ea164294b8351d63",
+    "original_query_utils.py": "35d81cb40224cbf842ffa1567827eee19ad102965c57b3e07bdb9b3477f13e2d",
+    "hybrid_retrieval.py": "4df5f54ca34b7d8bbbf114f3acd17be4d3b99fae88037938b55c38cf8b7182a2",
+    "vector_store.py": "117aa4f8d8382551904cad043561ac41d7cf74274616245d09486c866346ec15",
+    "cache_manager.py": "5e18f3d08939c7e46531c44555e9aa6377f1a135aa82927e5edc8768c0b14e07",
+    "embedding_cache.py": "a4a331611efd6c23e8ec87d8258de286621f3b9cbb3bc8dba2bf53dfae670822",
+    "embedding_generator.py": "97f401d029f2d95a29bdbcabf92c1b0484feb76b3af13eab283a1892650aecf0",
+    "mini_vector_store.py": "5bb537e0ab8acfa067168ce1eb1fd3d6ae41f1ed7728bc4ac689f821af8d1f59",
+    "reranker.py": "43652ab8b54ee1678dcbee14a20606e08c99c4c9dbef1c6c9faf252b5f6b6a66",
+    "retrieval_pipeline.py": "aa436ccf533f5028ac3f0f4daee8c6cce89c2cea1af1509adb78d7b8ece49245",
+    "pubmed_client.py": "3c5125e28bab3c7085caa8ba5d5a011704e8c12e558376b18c99f00fb95ab0f3",
+    "index_manager.py": "35d0a5b0d865ffa103dfa60631666e68120b6e311063a876d0e33d3e6a5f9101",
+    "alias_lookup.py": "c1a0a6dd03791c25f57e3595983a9be469dbd741af526ed2537ec972596e91a4"
+  }
+}

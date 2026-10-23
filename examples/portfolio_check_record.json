@@ -1,0 +1,118 @@
+{
+  "version": "0.10.0",
+  "recorded_at_utc": "2026-10-19T12:26:51.252757+00:00",
+  "report_kind": "offline_engineering_checks",
+  "model_calls": 0,
+  "external_requests": 0,
+  "medical_accuracy": null,
+  "retrieval_recall": null,
+  "scenarios": [
+    {
+      "scenario": "clear",
+      "title": "01 · 明确的疾病与对照比较",
+      "state": "completed",
+      "candidate_count": 1,
+      "evidence_count": 1,
+      "elapsed_seconds": 0.2976,
+      "passed": true
+    },
+    {
+      "scenario": "conditions",
+      "title": "02 · 不同条件，分别阅读",
+      "state": "completed",
+      "candidate_count": 2,
+      "evidence_count": 2,
+      "elapsed_seconds": 0.2993,
+      "passed": true
+    },
+    {
+      "scenario": "insufficient",
+      "title": "03 · 当前材料没有适用结果",
+      "state": "no_relations",
+      "candidate_count": 1,
+      "evidence_count": 0,
+      "elapsed_seconds": 0.2564,
+      "passed": true
+    }
+  ],
+  "retrieval": {
+    "corpus_snapshot": {
+      "snapshot_sha256": "89e687805759ad07fb9d9a5fb9a47976bd7a2dfd99ad01c49470bff03524abb1",
+      "chunk_count": "197777",
+      "paper_count": "17297",
+      "schema_version": "2",
+      "pdf_files": "17300",
+      "pdf_files_without_readable_text": "3",
+      "page_records": "106047",
+      "pages_sha256": "6f929214fe5724b494aed5f3464035cc47e7186038da8e46cb27fef167fc1c09"
+    },
+    "queries": [
+      {
+        "gene": "IL6",
+        "disease": "rheumatoid arthritis",
+        "limit": 10,
+        "repetitions": 5,
+        "returned_counts": [
+          10,
+          10,
+          10,
+          10,
+          10
+        ],
+        "elapsed_seconds": [
+          0.1413,
+          0.1358,
+          0.1325,
+          0.1354,
+          0.1351
+        ],
+        "median_seconds": 0.1354
+      },
+      {
+        "gene": "ABCC8",
+        "disease": "type 2 diabetes",
+        "limit": 10,
+        "repetitions": 5,
+        "returned_counts": [
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "elapsed_seconds": [
+          0.009,
+          0.0083,
+          0.0083,
+          0.0082,
+          0.0082
+        ],
+        "median_seconds": 0.0083
+      },
+      {
+        "gene": "CD36",
+        "disease": "type 2 diabetes",
+        "limit": 10,
+        "repetitions": 5,
+        "returned_counts": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "elapsed_seconds": [
+          0.0645,
+          0.0179,
+          0.018,
+          0.0181,
+          0.018
+        ],
+        "median_seconds": 0.018
+      }
+    ],
+    "index_unchanged": true,
+    "interpretation": "同一节点顺序重复查询，受系统缓存与负载影响；只测有界关键词检索耗时，不评判相关性、完整召回或全库抽取。"
+  },
+  "passed": true
+}
