@@ -1,0 +1,19 @@
+services:
+  evidence:
+    build: .
+    ports:
+      - "127.0.0.1:8501:8501"
+    environment:
+      RAG_RUNTIME_DIR: /app/.runtime
+      RAG_ENABLE_LIVE: ${RAG_ENABLE_LIVE:-false}
+      RAG_ENABLE_LITERATURE: ${RAG_ENABLE_LITERATURE:-true}
+      RAG_ACCESS_PASSWORD: ${RAG_ACCESS_PASSWORD:-}
+      LLM_API_KEY: ${LLM_API_KEY:-}
+      LLM_BASE_URL: ${LLM_BASE_URL:-https://api.deepseek.com/v1}
+      LLM_MODEL: ${LLM_MODEL:-}
+      LLM_TIMEOUT_SECONDS: ${LLM_TIMEOUT_SECONDS:-45}
+    volumes:
+      - task-data:/app/.runtime
+    restart: unless-stopped
+volumes:
+  task-data:
